@@ -1,4 +1,5 @@
 import axios from 'axios';
+import cors from 'cors';
 import express from 'express';
 
 interface Repository {
@@ -21,6 +22,7 @@ export default class App {
 
   constructor(API_URL = 'https://api.github.com') {
     this.app = express();
+    this.app.use(cors());
     this.API_URL = API_URL;
     this.router();
   }
