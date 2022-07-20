@@ -20,6 +20,7 @@ describe('Github API request', () => {
     chaiHttpResponse = await request(app).get('/');
     
     expect(chaiHttpResponse.body).to.be.an('array');
+    expect(chaiHttpResponse.body.length).to.be.equal(5);
   });
 
   it('Should have the expected properties', async () => {
