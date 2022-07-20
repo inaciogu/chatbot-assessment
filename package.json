@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node api/index.ts",
-    "dev": "ts-node-dev api/index.ts"
+    "dev": "ts-node-dev api/index.ts",
+    "test": "mocha -r ts-node/register ./api/tests/*$NAME*.{test,spec}.ts -t 10000 --exit"
   },
   "devDependencies": {
     "@tsconfig/node16": "^1.0.3",
