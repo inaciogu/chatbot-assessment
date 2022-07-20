@@ -11,6 +11,8 @@
  - Express
  - Typescript
  - Axios
+ - Mocha
+ - Chai
  - Docker
  
  ## Rodando localmente
